@@ -39,7 +39,7 @@ selfhosted_sites:
   - name: nextcloud
     type: nextcloud
     server_fqdn: nextcloud.{{ base_domain }}
-    collabora:   fasle
+    collabora:   false
     onlyoffice:  false
     talk:        false
     talk_server: base.{{ base_domain }}
