@@ -9,7 +9,7 @@ ssl_cert_email: selfhosted@unlimtools.com
 
 # set this to true if you want to enable a postfix mail relay for all your selfhosted services
 # edit group_vars/mail_relay.yml to set user/password for your upstream mail server
-mailrelay_enabled: true
+mailrelay_enabled: false
 
 # your maildomain
 selfhosted_mail_domain: '{{ base_domain }}'
@@ -18,13 +18,13 @@ selfhosted_mail_domain: '{{ base_domain }}'
 backup_enabled: false
 
 # adminer is a webfront end for your database at https://base.{{ base_domain }}/adminer
-adminer_enabled: false
+adminer_enabled: true
 
 # portainer is a webfront end for docker host at https://base.{{ base_domain }}/portainer/
 portainer_enabled: true
 
 # user for traefik dashboard at https://base.{{ base_domain }}/traefik
-traefik_api_enabled: false
+traefik_api_enabled: true
 
 
 selfhosted_sites:
