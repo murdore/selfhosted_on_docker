@@ -40,9 +40,8 @@ selfhosted_sites:
     type: nextcloud
     server_fqdn: nextcloud.{{ base_domain }}
     collabora:   fasle
-    collabora_dictionaries: "de_DE en_GB en_US es_ES fr_FR it nl pt_BR pt_PT ru"
-    onlyoffice:  true
-    talk:        true
+    onlyoffice:  false
+    talk:        false
     talk_server: base.{{ base_domain }}
 
   - name: joomla
