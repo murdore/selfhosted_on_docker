@@ -2,10 +2,10 @@
 
 # Define your selfhosted sites here
 
-base_domain: selfhosted.unlimtools.tld
+base_domain: selfhosted.unlimtools.com
 
 # Your email adresse for letsencrypt
-ssl_cert_email: selfhosted@.unlimtools.tld
+ssl_cert_email: selfhosted@unlimtools.com
 
 # set this to true if you want to enable a postfix mail relay for all your selfhosted services
 # edit group_vars/mail_relay.yml to set user/password for your upstream mail server
