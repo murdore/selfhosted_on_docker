@@ -2,10 +2,10 @@
 
 # Define your selfhosted sites here
 
-base_domain: selfhosted.example.tld
+base_domain: selfhosted.unlimtools.tld
 
 # Your email adresse for letsencrypt
-ssl_cert_email: selfhosted@.example.tld
+ssl_cert_email: selfhosted@.unlimtools.tld
 
 # set this to true if you want to enable a postfix mail relay for all your selfhosted services
 # edit group_vars/mail_relay.yml to set user/password for your upstream mail server
@@ -14,7 +14,7 @@ mailrelay_enabled: true
 # your maildomain
 selfhosted_mail_domain: '{{ base_domain }}'
 
-# Enable to backup your server 
+# Enable to backup your server
 backup_enabled: false
 
 # adminer is a webfront end for your database at https://base.{{ base_domain }}/adminer
@@ -64,11 +64,11 @@ selfhosted_sites:
   - name: rocketchat
     type: rocketchat
     server_fqdn: rocketchat.{{ base_domain }}
-    
+
   - name: wallabag
     type: wallabag
     server_fqdn: wallabag.{{ base_domain }}
-    
+
   - name: drawio
     type: drawio
     server_fqdn: drawio.{{ base_domain }}
